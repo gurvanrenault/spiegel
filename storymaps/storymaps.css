@@ -1,0 +1,45 @@
+
+  #pinned_story
+  {
+    width: 60px;
+    height:60px;
+    background-color:white;
+    background-size: cover;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    border-radius: 50%;
+    position:absolute;
+    left:-30px;
+
+  }
+  .leaflet-div-icon
+  {
+
+  }
+  .leaflet-div-icon
+  {
+    background-color: transprent;
+  }
+  .img{width: 100%;
+  height:: 100%;
+  box-sizing:none;
+  background-size: cover;
+  margin:0
+  padding:0;
+}
+
+#title_pinned_story
+{
+background-color: white;
+height:15px;
+width: 120px;
+position:absolute;
+text-align: center;
+border-radius: 5px;
+border-style: solid;
+border-width: thin;
+border-color:black;
+color:black;
+left:-60px;
+top:50px;
+}
