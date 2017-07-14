@@ -1,15 +1,24 @@
 var storymap
-function getLocation()
+function aroundYou()
 {
-  if (navigation.geolocation)
+  if (navigator.geolocation)
   {
+    navigator.geolocation.getCurrentPosition(updateViewPosition,errorGeolocation);
     console.log("Geolocation supported ");
   }else{
     console.log("Geolocation not supported ");
     window.alert("Geolocation not supported");
   }
 }
-
+function updateViewPosition(position) {
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+    storymap.setView([position.coords.latitude,position.coords.longitude])
+}
+function errorGeolocation()
+{
+    console.log("Erreur Geolocation");
+}
 function initHeatMap(view,id,stories_coordonates)
 {
   document.getElementById(id).style.width=(window.innerWidth*0.97)+"px";
