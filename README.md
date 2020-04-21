@@ -1,7 +1,5 @@
 # Spiegel
-Open-source all the features of Snapchat for the web
 
-Disclaimer : Not affiliated with any company ( even if the company copy features of other companies)
 
 ## Features
 
